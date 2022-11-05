@@ -1,8 +1,14 @@
-import { createBrowserRouter } from "react-router-dom";
-import "./App.css";
+import { RouterProvider } from 'react-router-dom';
+import './App.css';
+import router from './Router/Routes/Routes';
 
 function App() {
-  return <RouterProvider router={router}></RouterProvider>;
+
+  return (
+    <div className='max-w-screen-xl mx-auto'>
+      <RouterProvider router={router}></RouterProvider>
+    </div>
+  );
 }
 
 export default App;
